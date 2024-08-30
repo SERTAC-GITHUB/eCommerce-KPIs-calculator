@@ -1,0 +1,147 @@
+/* Importing the Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #a2c2e4, #f6c5b3, #c3a7e8);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 15px; /* Rounded corners */
+    border: 2px solid #007bff;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+select, input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="number"] {
+    border: 1px solid #007bff;
+}
+
+select:focus, input[type="number"]:focus {
+    border-color: #0056b3;
+    background: #f0f0f0;
+}
+
+button {
+    display: block;
+    width: 150px;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center; /* Center align button text */
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.kpi-content {
+    border: 2px solid transparent; /* Default border color for KPI content */
+    border-radius: 15px; /* Rounded corners */
+    padding: 15px;
+    margin-top: 10px;
+    background: #f9f9f9; /* Light background for content */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.kpi-content h2 {
+    margin: 0;
+    color: #007bff;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #007bff; /* Border under title */
+    padding-bottom: 10px;
+}
+
+.kpi-content p {
+    margin: 10px 0;
+    border-bottom: 2px solid #007bff; /* Border under description */
+    padding-bottom: 10px;
+}
+
+.kpi-content label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.kpi-content .input-group {
+    border: 2px solid #007bff; /* Border for input group */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.kpi-content input {
+    width: calc(100% - 20px);
+    margin-top: 5px;
+    padding: 8px;
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #007bff; /* Border for input fields */
+}
+
+.kpi-content.opened {
+    border: 2px solid #0056b3; /* Border for opened KPI container */
+    background: #e6f0ff; /* Light background when opened */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    button {
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100px;
+    }
+}
